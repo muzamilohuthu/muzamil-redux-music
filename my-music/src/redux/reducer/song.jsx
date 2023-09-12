@@ -2,20 +2,20 @@ import { createSlice } from "@reduxjs/toolkit"
 import { MusicList } from "../../data/Musiclist";
 
 
-const initialstate = {
+const initialState = {
     value : MusicList[0]
 }
 
 const list = createSlice({
     name:'song',
-    initialstate,
-    redusers:{
-        changesong : (state ,action) => {
+    initialState,
+    reducers:{
+        changeSong : (state ,action) => {
             state.value = action.payload
         }
     }
 })
 
-export const { changesong } = list.actions;
+export const { changeSong } = list.actions;
 
 export default  list.reducer;

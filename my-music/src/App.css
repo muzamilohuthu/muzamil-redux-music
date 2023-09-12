@@ -95,3 +95,32 @@ html,body,#root{
  margin: 0px 20px;
  cursor: pointer;
 }
+
+.player{
+  position: fixed;
+  bottom: 10px;
+  width: 100%;
+  background-color: whitesmoke;
+  text-align: center;
+  color: black;
+}
+
+.player-control {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.player-control:hover{
+  background-color: black;
+  color: white;
+  border-radius: 15px;
+}
+
+.player .name{
+  padding-right: 15px;
+}
+
+.cursor-disable{
+  cursor: not-allowed;
+}
