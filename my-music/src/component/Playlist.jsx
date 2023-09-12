@@ -32,12 +32,12 @@ const PlayList = () => {
               < BsFillArrowLeftCircleFill onClick={()=> setIsPlaylist(true)} />
               {playlist.title}
               </div>
+              <div className='d-flex flex-wrap justify-content-center'> 
               {list.map((item) => ( 
-                <div className='d-flex flex-wrap justify-content-center'> 
               <Song {...item} />
-              </div>
+              
               ))}
-
+              </div>  
             </div>
           }
         </div>

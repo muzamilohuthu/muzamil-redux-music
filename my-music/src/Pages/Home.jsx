@@ -6,10 +6,14 @@ import { MusicList } from '../data/Musiclist';
 import PlayList from '../component/Playlist';
 
 import img1 from '../images/monkey.png'
+import { useSelector } from 'react-redux';
+import Player from '../component/Player';
 
 const Home = () => {
 
     const [isSongs, setIsSongs] =useState(true);
+
+    const song =useSelector(state => state.song.value);
     return (
         <div className='home'>
            <h1 className='head'><img src={img1} alt="img" className='logo-img'/>Tune Monkeys</h1>
@@ -37,8 +41,9 @@ const Home = () => {
         <div className='d-flex flex-wrap songs'> 
         {
 
-            MusicList.map((item) => <Song {...item} />)
-        }
+            MusicList.map((item) =>( 
+            <Song {...item} />
+            ))}
           
         </div>
       
@@ -47,8 +52,10 @@ const Home = () => {
       : (
        < PlayList />
 
-    )}</div>
+    )}
+    </div>
       </div>
+     {song && <Player />}
         </div>
     );
 };
