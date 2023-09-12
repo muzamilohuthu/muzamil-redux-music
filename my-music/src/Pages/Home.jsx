@@ -5,12 +5,14 @@ import Song from '../component/Song';
 import { MusicList } from '../data/Musiclist';
 import PlayList from '../component/Playlist';
 
+import img1 from '../images/monkey.png'
+
 const Home = () => {
 
     const [isSongs, setIsSongs] =useState(true);
     return (
         <div className='home'>
-           <h1 className='head'>Tune Monkeys</h1>
+           <h1 className='head'><img src={img1} alt="img" className='logo-img'/>Tune Monkeys</h1>
            <div className='d-flex justify-content-center search'>
             
             <input 
@@ -28,9 +30,10 @@ const Home = () => {
 
       <div className='d-flex content'>
         <Menu isSongs={isSongs} setIsSongs={setIsSongs} />
+        <div style={{flex: 1}}>
         { isSongs ? (
-      <div style={{flex: 1}}>
-      { 
+      
+       
         <div className='d-flex flex-wrap songs'> 
         {
 
@@ -38,13 +41,13 @@ const Home = () => {
         }
           
         </div>
-      }
-      </div>
+      
+      
         )
       : (
        < PlayList />
 
-    )}
+    )}</div>
       </div>
         </div>
     );

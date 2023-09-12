@@ -15,7 +15,10 @@ html,body,#root{
   margin: 20px 0px;
   
 }
-
+.logo-img{
+  width: 40px;
+  height: 43px;
+}
 
 .search input{
   border: 5px solid black;
@@ -62,10 +65,12 @@ html,body,#root{
 }
 .play-icon{
   position: absolute;
-  opacity: 0.5;
+  opacity:0.6;
   font-size: 5em;
   left: 35px;
   bottom: 80px;
+  background-color: aliceblue;
+  border-radius: 50%;
 }
 .content{
   margin-top: 20px;
