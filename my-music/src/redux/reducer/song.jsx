@@ -1,9 +1,9 @@
 import { createSlice } from "@reduxjs/toolkit"
-import { MusicList } from "../../data/Musiclist";
+
 
 
 const initialState = {
-    value : MusicList[0]
+    value : null
 }
 
 const list = createSlice({

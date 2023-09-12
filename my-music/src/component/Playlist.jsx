@@ -5,7 +5,7 @@ import Song from './Song';
 import { changeList } from '../redux/reducer/List';
 import { BsFillArrowLeftCircleFill } from 'react-icons/bs';
 
-const PlayList = () => {
+const PlayList = ({search}) => {
     const [isPlaylist ,setIsPlaylist] = useState(true);
     const [playlist ,setpalylist] =useState({})
     const  list =useSelector (state => state.list.value);
@@ -14,8 +14,9 @@ const PlayList = () => {
         <div className='songs d-flex flex-wrap justify-content-center'>
 
           {
-            isPlaylist ? Playlist.map((item)=> ( 
-            <div className='song text-center '  
+            isPlaylist ? Playlist.filter(data => data.title.toLowerCase().includes(search.toLowerCase())
+            ).map((item)=> ( 
+            <div className='song text-center card'  
             onClick={() => { 
               setpalylist(item)
               setIsPlaylist(false);
@@ -33,7 +34,8 @@ const PlayList = () => {
               {playlist.title}
               </div>
               <div className='d-flex flex-wrap justify-content-center'> 
-              {list.map((item) => ( 
+              {list.filter(data => data.title.toLowerCase().includes(search.toLowerCase())
+            ).map((item) => ( 
               <Song {...item} />
               
               ))}

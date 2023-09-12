@@ -8,7 +8,7 @@ export const MusicList = [
     },
     {
       title: "Bad Liar",
-      artist: "Imagine Dragons",
+      artist: "Imagine ",
       artwork: "https://samplesongs.netlify.app/album-arts/bad-liar.jpg",
       url: "https://samplesongs.netlify.app/Bad%20Liar.mp3",
       id: "2"
@@ -59,7 +59,7 @@ export const MusicList = [
               },
               {
                 title: "Bad Liar",
-                artist: "Imagine Dragons",
+                artist: "Imagine ",
                 artwork: "https://samplesongs.netlify.app/album-arts/bad-liar.jpg",
                 url: "https://samplesongs.netlify.app/Bad%20Liar.mp3",
                 id: "2"

@@ -6,7 +6,7 @@ const Song = (props) => {
     const song  = useSelector ((state) => state.song.value);
     const dispatch = useDispatch (); 
     return (
-        <div className='song text-center' onClick={() => {
+        <div className='song text-center card' onClick={() => {
          dispatch(changeSong(props));
          setTimeout(() => {
             if(song?.id !== props.id) {
@@ -17,13 +17,13 @@ const Song = (props) => {
          })
         }}>
             <img className='audio-img' alt={props.title}  src={props.artwork} />
-            {props.id ===  song.id? < BsFillPauseCircleFill className='play-icon' /> : 
+            {props.id ===  song?.id? < BsFillPauseCircleFill className='play-icon' /> : 
             < BsFillPlayCircleFill className='play-icon' />
             }
             
             <div>{props.title}</div>
             
-            <div>Artist : {props.artist}</div>
+            <div>Artist:{props.artist}</div>
         </div>
     );
 };
