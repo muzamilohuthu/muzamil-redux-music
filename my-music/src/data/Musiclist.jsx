@@ -85,21 +85,21 @@ export const MusicList = [
                 artist: "Ellie Goulding",
                 artwork: "https://samplesongs.netlify.app/album-arts/hate-me.jpg",
                 url: "https://samplesongs.netlify.app/Hate%20Me.mp3",
-                id: "1"
+                id: "4"
               },
               {
                 title: "Solo",
                 artist: "Clean Bandit",
                 artwork: "https://samplesongs.netlify.app/album-arts/solo.jpg",
                 url: "https://samplesongs.netlify.app/Solo.mp3",
-                id: "2"
+                id: "5"
               },
               {
                 title: "Without Me",
                 artist: "Halsey",
                 artwork: "https://samplesongs.netlify.app/album-arts/without-me.jpg",
                 url: "https://samplesongs.netlify.app/Without%20Me.mp3",
-                id: "3"
+                id: "6"
               }
         ]
     }
