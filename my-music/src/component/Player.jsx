@@ -25,7 +25,7 @@ const Player = () => {
     return (
         <div className='player'>
             <div className='d-flex justify-content-center align-items-center'>
-                 <img src={song.artwork} alt={song.title} height="50" width="50" style={{borderRadius:`15px` , marginRight:10}} />
+                 <img src={song.artwork} alt={song.title} height="50" width="50" style={{borderRadius:`15px` , marginRight:10}} className='palyerimg' />
                  <div className='name'>{song.title}</div>
                  <div className={`player-control ${!isPre() && 'cursor-disable'}`}
                  onClick={()=> {
