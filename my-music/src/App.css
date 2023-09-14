@@ -1,7 +1,7 @@
 
 
 body{
-  background-color: transparent;
+  background-color: white;
 }
 
 html,body,#root{
@@ -9,7 +9,7 @@ html,body,#root{
 }
 
 .head{
-  background-color: whitesmoke;
+  background-color: rgb(207, 207, 207);
   padding: 10px;
   text-align: center;
   margin: 20px 0px;
@@ -113,15 +113,18 @@ html,body,#root{
   position: fixed;
   bottom: 10px;
   width: 100%;
-  background-color: whitesmoke;
+  background-color: rgb(207, 207, 207);
   text-align: center;
   color: black;
 }
-
+.player .name{
+  font-size: 10px;
+}
 .player-control {
   width: 30px;
   height: 30px;
   cursor: pointer;
+  margin: 5px;
 }
 
 .player-control:hover{
@@ -156,4 +159,12 @@ html,body,#root{
   .songs {
     padding-bottom: 100px;
   }
+  .player{
+    bottom: 10px;
+    width: 90%;
+    margin: 0px 20px;
+    padding: 0px 5px;
+    border-radius: 5px;
+  }
+
 }
